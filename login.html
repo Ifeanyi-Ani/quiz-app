@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen et Veritas International Academy</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg my-bg-primary">
+        <div class="container">
+          <a class="navbar-brand  text-white roundedImg" href="#"><img src="./images/logo.jpg" alt=""></a>
+          <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link my-txt-primary" aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle my-txt-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    REGISTER
+                  </a>
+                  <ul class="dropdown-menu my-bg-primary">
+                    <li><a class="dropdown-item my-txt-primary hoverNav" href="school_register.html">SCHOOL</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item my-txt-primary hoverNav" href="student_register.html">STUDENT</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
+    <main class="mt-5">
+      <section class="formSection m-auto container">
+        <div class="my-bg-primary2 text-white text-center p-3"><h2>LOGIN</h2></div>
+        <div class="my-card2 p-3">Use your email and reg. number to sign-in </div>
+        <form action=""  enctype='multipart/form-data' class="container user-login mt-3 p-4 rounded-3 my-card2">
+            
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="e.g. emma@gmail.com">
+                <span class="text-danger fst-italic"></span>
+            </div>
+
+                <div class="mb-3">
+                    <label for="regNo" class="form-label">Reg. No.</label>
+                    <input type="text" class="form-control" id="regNo" placeholder="e.g. ea452456eb">
+                    <span class="text-danger fst-italic"></span>
+                </div>
+            </div>
+
+            <span class="text-danger fst-italic" id="mess"></span>
+            <div class="mb-3 text-center">
+              
+                <button class="my-btn2 p-2 text-white rounded-3 border-0 my-bg-primary2" id="btn_login">Login</button>
+            </div>
+        </form>
+    </section>
+    </main>
+    
+    <footer class="my-bg-primary mt-5">
+      <div class="container-fluid text-center text-white">
+       &copy; Veritas Academy 
+      </div>
+     </footer>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen et Veritas International Academy</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg my-bg-primary">
+        <div class="container">
+          <a class="navbar-brand  text-white roundedImg" href="#"><img src="./images/logo.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link my-txt-primary" aria-current="page" href="index.html">HOME</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
+    <main class="mt-5">
+         <section class="container">
+          <div class="d-flex justify-content-between my-bg-primary2 text-white p-3" id="studentDetails">
+            <div>School</div>
+            <div>Ifeanyi Ani</div>
+            <div>Reg no</div>
+          </div>
+          <div class="d-flex justify-content-between my-card2 p-3">
+            <div id="count">Question x of y</div>
+            <div id="score">Score(0)</div>
+            <div id="countdown" class="text-danger">TIME: min:secs</div>
+          </div>
+          <div class="text-center myPrimary">Click the answer to move to the next question</div>
+          <div class="row my-card2 mt-5 p-3 rounded-3">
+            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center fs-3 fw-bold" id="quest">Loading Questions from database</div>
+            <div class="col-12 col-md-6">
+              <button class="my-btn text-start mt-2" id="btn0"><div class="opb">A.</div>  <div class="opt" data-number="1" id="opt0">Loading</div></button>
+              <button class="my-btn text-start mt-2" id="btn1"><div class="opb">B.</div>  <div class="opt" data-number="2" id="opt1">Loading</div></button>
+              <button class="my-btn text-start mt-2" id="btn2"><div class="opb">C.</div>  <div class="opt" data-number="3" id="opt2">Loading</div></button>
+              <button class="my-btn text-start mt-2" id="btn3"><div class="opb">D.</div>  <div class="opt" data-number="4" id="opt3">Loading</div></button>
+            </div>
+          </div>
+         </section>
+
+  <div id="simpleModal" class="modal-overlay">
+    <div class="modal-content rounded-3">
+      <div class="modal-header">
+        <h2>Quiz Result</h2>
+          <button class="closeBtn">X</button>
+      </div>
+      <div class="modal-body text-center">
+        <p id="res_n">Hello Ifeanyi</p>
+        <p id="res_s">you Score 1/10</p>
+      </div>
+      <div class="modal-footer">
+        <a href="./index.html" class="btn my-btn2">Go to Homepage</a>
+      </div>
+    </div>
+  </div>
+    </main>
+    
+    <footer class="my-bg-primary mt-5">
+      <div class="container-fluid text-center text-white">
+       &copy; Veritas Academy 
+      </div>
+     </footer>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/quiz.js"></script>
+</body>
+</html>

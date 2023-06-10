@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen et Veritas International Academy</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg my-bg-primary">
+        <div class="container">
+          <a class="navbar-brand  text-white roundedImg" href="#"><img src="./images/logo.jpg" alt=""></a>
+          <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link my-txt-primary" aria-current="page" href="index.html">HOME</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
+    <main class="mt-5">
+      <section class="formSection m-auto container">
+        <div class="my-bg-primary2 text-white text-center p-3"><h2>PAYMENT(for LATE REGISTRATION)</h2></div>
+        <form action=""  enctype='multipart/form-data' class="container latePay mt-3 p-4 rounded-3 my-card2">
+           
+    
+              
+                <div class="mb-3">
+                    <label for="" class="form-label">Amount:</label>
+                    <input type="text" class="form-control" disabled value="N5,000">
+                    <span class="text-danger fst-italic"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label">Holder Name:</label>
+                    <input type="text" class="form-control">
+                    <span class="text-danger fst-italic"></span>
+                </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Card No.:</label>
+                <input type="number" class="form-control">
+                <span class="text-danger fst-italic"></span>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-12 col-md-6">
+                    <label for="" class="form-label">CCV:</label>
+                    <input type="number" class="form-control">
+                    <span class="text-danger fst-italic"></span>
+                </div>
+                <div class="col-12 col-md-6 mt-3 mt-md-0">
+                    <label for="" class="form-label">Pin:</label>
+                    <input type="number" class="form-control">
+                    <span class="text-danger fst-italic"></span>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Email Address:</label>
+                <input type="email" class="form-control" id="email" placeholder="e.g. emma@gmail.com">
+                <span class="text-danger fst-italic"></span>
+            </div>
+
+            <div class="mb-3 text-center">
+                <button class="my-btn2 p-2 text-white rounded-3 border-0 my-bg-primary2" id="pay_btn">PAY & CONTINUE</button>
+            </div>
+        </form>
+    </section>
+    </main>
+    <footer class="my-bg-primary mt-5">
+      <div class="container-fluid text-center text-white">
+       &copy; Veritas Academy 
+      </div>
+     </footer>
+
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+        const pay_btn=document.querySelector("#pay_btn");
+        const latePay=document.querySelectorAll(".latePay .form-control");
+        pay_btn.addEventListener("click",(e)=>{
+           e.preventDefault();
+           for (let i=0; i<latePay.length; i++){
+            if(latePay[i].value==""||latePay[i].value==null){
+             latePay[i].nextElementSibling.textContent="field is required"
+             return
+            }else{
+                latePay[i].nextElementSibling.textContent="";
+            }
+           }
+            location.href="school_register.html";
+        })
+    </script>
+</body>
+</html>

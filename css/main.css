@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.roundedImg {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.roundedImg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.roundedImg-big {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.roundedImg-big img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.myPrimary {
+  color: #102227;
+}
+
+.my-bg-primary {
+  background-color: #102227;
+}
+
+.my-bg-primary2 {
+  background-color: #219ebc;
+}
+
+.my-txt-primary {
+  color: #fff;
+}
+
+.my-txt-primary:hover {
+  background-color: #fff;
+  color: #102227;
+}
+
+.my-card {
+  cursor: pointer;
+  background-color: #102227;
+  color: #fff;
+  padding: 10px;
+  -webkit-box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.my-card:hover {
+  background-color: rgba(16, 34, 39, 0.9);
+  color: #fff;
+}
+
+.my-card2 {
+  background-color: #fff;
+  color: #102227;
+  padding: 10px;
+  -webkit-box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.my-btn {
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #219ebc;
+  width: 100%;
+  height: 32px;
+  background-color: #fff;
+  position: relative;
+}
+
+.my-btn .opb {
+  background-color: #219ebc;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.my-btn .opt {
+  pointer-events: all;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  font-size: 20px;
+}
+
+.my-btn .opt:hover {
+  background-color: #219ebc;
+  color: #fff;
+}
+
+.my-btn .opt:active {
+  background-color: rgba(16, 34, 39, 0.5);
+  -webkit-transform: translate(1px);
+          transform: translate(1px);
+}
+
+.my-btn2 {
+  border: 1px solid #102227;
+  color: #102227;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.my-btn2:hover {
+  background-color: #102227;
+  color: #fff;
+}
+
+.my-btn2:active {
+  -webkit-transform: translate(1px);
+          transform: translate(1px);
+  background-color: rgba(16, 34, 39, 0.7);
+}
+
+.my-btn3 {
+  background-color: #219ebc;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.my-btn3:hover {
+  background-color: #102227;
+  color: #fff;
+}
+
+.my-btn3:active {
+  -webkit-transform: translate(1px);
+          transform: translate(1px);
+}
+
+.center-offset {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  bottom: 5px;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(16, 34, 39, 0.5);
+}
+
+.modal-overlay .modal-content {
+  background-color: #fff;
+  margin: 20% auto;
+  width: 50%;
+  -webkit-box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.modal-overlay .modal-content .modal-header {
+  background: #102227;
+  padding: 15px;
+  color: #fff;
+  position: relative;
+}
+
+.modal-overlay .modal-content .modal-header .closeBtn {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  -webkit-box-shadow: 0 7px 25px rgba(153, 153, 153, 0.8);
+          box-shadow: 0 7px 25px rgba(153, 153, 153, 0.8);
+  border-radius: 25px;
+}
+
+.modal-overlay .modal-content .modal-header .closeBtn:hover, .modal-overlay .modal-content .modal-header .closeBtn:focus {
+  color: #102227;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-overlay .modal-content .modal-body {
+  padding: 10px 20px;
+}
+
+.modal-overlay .modal-content .modal-footer {
+  background: #fff;
+  padding: 10px;
+  color: #102227;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
